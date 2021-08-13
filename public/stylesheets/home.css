@@ -49,14 +49,14 @@ html {
 /*Basic Style Settings Start*/
 
 
-.about .about-content,
-.service .serv-content, .skills .skills-content {
+.about .about-content, .service .serv-content, 
+.skills .skills-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.about, .service, .skills {
+.about, .service, .skills, .team {
     font-family: 'Poppins', sans-serif;
 }
 section {
@@ -274,11 +274,12 @@ background: none;
 /* Services Section Start */
 
 
-.service {
+.service, .team {
     color: #fff;
     background: #111;
 }
-.service .title::before {
+.service .title::before, 
+.team .title::before {
     background: #fff;
 }
 .service .title::after {
@@ -404,12 +405,83 @@ background: none;
 }
 
 
-/* skillss Section End */
+/* skills Section End */
 
 
-/* 1:9:00 VIEDOOO */
+
+
+/* team Section Start */
+
+
+.team .title::after {
+    content: "Who's With Me";
+    background: #111;
+}
+.team .carousel .card {
+    background-color: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+}
+.team .carousel .card:hover {
+    background-color: crimson;
+}
+.team .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.team .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+.team .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 5px solid crimson;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.team .carousel .card:hover img {
+    border-color: #fff;
+}
+.team .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border: 2px solid crimson!important;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+    background-color: crimson!important;
+}
+
+
+/* team Section End */
+
 
 /* Contact jab active ho tw copy ka option aai */
+
 
 /* Media Query Start */
 
