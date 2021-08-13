@@ -286,7 +286,7 @@ background: none;
     content: "What I Provide";
 }
 .service .serv-content .card {
-    width: calc(33% - 20px);
+    width: calc(43%);
     background: #222;
     text-align: center; 
     border-radius: 6px;
@@ -388,19 +388,19 @@ background: none;
     margin-bottom: 5px;
 }
 .skills-content .right .html::before {
-    width: 90%;
+    width: 80%;
 }
 .skills-content .right .css::before {
     width: 60%;
 }
 .skills-content .right .js::before {
-    width: 80%;
-}
-.skills-content .right .bootstrap::before {
     width: 50%;
 }
-.skills-content .right .c::before {
+.skills-content .right .bootstrap::before {
     width: 70%;
+}
+.skills-content .right .c::before {
+    width: 30%;
 }
 
 
@@ -413,11 +413,23 @@ background: none;
 
 /* Media Query Start */
 
-
+@media (max-width: 1276px) {
+    .skills-content .right .bars {
+        margin-bottom: 20px;
+    }
+}
 @media (max-width: 1104px) {
     .about .about-content .left img {
         height: 350px;
         width: 350px;
+    }
+    .skills-content .right .bars {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1017px) {
+    .skills-content .right .bars {
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 991px) {
@@ -482,6 +494,17 @@ background: none;
     .service .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+    .service .serv-content .card-center {
+        display: flex;
+        margin: auto;
+    }
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .skills-content .right .bars {
+        margin-bottom: 15px;
     }
 }
 @media (max-width: 690px) {
