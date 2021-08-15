@@ -32,4 +32,4 @@ jobs:
         
       # Runs a command to deploy to firebase
       - name: Firebase Deployment
-        run: firebase deploy --token "1//03cxFKCJ9Jh2-CgYIARAAGAMSNwF-L9IrtcmJB9m5yIYMy9stIjTHBZ8xzztgc_Iz_ZPfjDGgkk9icaB0UnuhrGS-yLxQ_0q_a5A"
+        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
