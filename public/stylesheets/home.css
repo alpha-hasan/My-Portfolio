@@ -25,6 +25,9 @@ section {
 
 html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    
 }
 ::-webkit-scrollbar {
     width: 8px;
