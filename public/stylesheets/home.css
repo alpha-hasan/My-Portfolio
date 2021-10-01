@@ -27,7 +27,7 @@ html {
     scroll-behavior: smooth;
     overflow-y: scroll;
     scrollbar-width: thin;
-    
+    scrollbar-color: #dc143c #050505;
 }
 ::-webkit-scrollbar {
     width: 8px;
