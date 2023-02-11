@@ -4,10 +4,10 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 .max-width {
@@ -15,6 +15,7 @@
     padding: 0 80px;
     margin: auto;
 }
+
 section {
     padding: 100px 0;
 }
@@ -29,13 +30,16 @@ html {
     scrollbar-width: thin;
     scrollbar-color: #dc143c #050505;
 }
+
 ::-webkit-scrollbar {
     width: 8px;
     background-color: #050505;
 }
+
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(transparent, #dc143c, transparent);
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, #ff0033, transparent);
 }
@@ -52,19 +56,22 @@ html {
 /*Basic Style Settings Start*/
 
 
-.about .about-content, .service .serv-content, 
+.about .about-content, .service .serv-content,
 .skills .skills-content, .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
 .about, .service, .skills, .team, .contact, footer {
     font-family: 'Poppins', sans-serif;
 }
+
 section {
     padding: 100px 0;
 }
+
 section .title {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
@@ -74,6 +81,7 @@ section .title {
     margin-bottom: 60px;
     position: relative;
 }
+
 section .title::before {
     content: "";
     position: absolute;
@@ -84,6 +92,7 @@ section .title::before {
     background: #111;
     transform: translateX(-50%);
 }
+
 section .title::after {
     position: absolute;
     bottom: -14px;
@@ -96,12 +105,13 @@ section .title::after {
 }
 
 .home .home-content a:hover,
-.about .about-content .right a:hover, 
+.about .about-content .right a:hover,
 .skills .skills-content .left a:hover,
 .contact .right form .button-area button:hover {
     background: none;
     color: crimson;
 }
+
 /* Basic Style Settings End */
 
 
@@ -118,31 +128,38 @@ section .title::after {
     z-index: 999;
     transition: all 0.3s ease;
 }
+
 .navbar.sticky {
     padding: 15px 0;
     background: crimson;
 }
+
 .navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar .logo a {
     color: #fff;
     font-weight: 600;
     font-size: 35px;
 }
+
 .navbar .logo a span {
     color: crimson;
 }
+
 .navbar.sticky .logo a span {
     color: #fff;
     transition: all 0.3s ease;
 }
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
+
 .navbar .menu li a {
     display: block;
     margin-left: 25px;
@@ -151,6 +168,7 @@ section .title::after {
     font-size: 18px;
     transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover {
     color: crimson;
 }
@@ -186,29 +204,36 @@ section .title::after {
     color: #fff;
 
 }
+
 .home .max-width {
     display: flex;
     width: 100%;
 }
+
 .home .home-content .text-1 {
     font-size: 27px;
 }
+
 .home .home-content .text-1 span {
     color: crimson;
 }
+
 .home .home-content .text-2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
+
 .home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
 }
+
 .home .home-content .text-3 span {
     color: crimson;
     font-weight: 500;
 }
+
 .home .home-content a {
     display: inline-block;
     background: crimson;
@@ -233,29 +258,36 @@ section .title::after {
 .about .title::after {
     content: "Who I am";
 }
+
 .about .about-content .left {
     width: 45%;
 }
+
 .about .about-content .left img {
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
+
 .about .about-content .right {
     flex: 55%;
 }
+
 .about .about-content .right .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .about .about-content .right .text span {
     color: crimson;
 }
+
 .about .about-content .right p {
     text-align: justify;
 }
+
 .about .about-content .right a {
     display: inline-block;
     background: crimson;
@@ -282,40 +314,53 @@ section .title::after {
     color: #fff;
     background: #111;
 }
-.service .title::before, 
+
+.service .title::before,
 .team .title::before {
     background: #fff;
 }
+
 .service .title::after {
     background: #111;
     content: "What I Provide";
 }
+
+.serv-content {
+    justify-content: center !important;
+}
+
 .service .serv-content .card {
     width: calc(43%);
     background: #222;
-    text-align: center; 
+    text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .service .serv-content .card:hover {
     background-color: crimson;
 }
+
 .service .serv-content .card .box {
     transition: all ease 0.3s;
 }
+
 .service .serv-content .card:hover .box {
     transform: scale(1.05);
 }
+
 .service .serv-content .card i {
     font-size: 50px;
     color: crimson;
     transition: color ease 0.3s;
 }
-.service .serv-content .card:hover i{
+
+.service .serv-content .card:hover i {
     color: #fff;
 }
+
 .service .serv-content .card .text {
     font-size: 25px;
     font-weight: 500;
@@ -332,19 +377,23 @@ section .title::after {
 
 
 .skills .title::after {
-    content:"What I Know";
+    content: "What I Know";
 }
+
 .skills .skills-content .column {
     width: calc(50% - 30px);
 }
+
 .skills .skills-content .left .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
+
+.skills .skills-content .left p {
     text-align: justify;
 }
+
 .skills .skills-content .left a {
     display: inline-block;
     background: crimson;
@@ -357,24 +406,29 @@ section .title::after {
     border-radius: 6px;
     transition: all 0.3s ease;
 }
+
 .skills-content .right .bars {
     margin-bottom: 15px;
 }
+
 .skills-content .right .bars .info {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .skills-content .right .bars .info span {
     font-weight: 500;
     font-size: 18px;
 }
+
 .skills-content .right .line {
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
+
 .skills-content .right .line::before {
     content: "";
     position: absolute;
@@ -383,23 +437,29 @@ section .title::after {
     left: 0;
     top: 0;
     background-color: crimson;
-    
+
 }
+
 .skills-content .right .info {
     margin-bottom: 5px;
 }
+
 .skills-content .right .html::before {
     width: 80%;
 }
+
 .skills-content .right .css::before {
     width: 60%;
 }
+
 .skills-content .right .js::before {
     width: 50%;
 }
+
 .skills-content .right .bootstrap::before {
     width: 70%;
 }
+
 .skills-content .right .c::before {
     width: 30%;
 }
@@ -417,6 +477,7 @@ section .title::after {
     content: "Who's With Me";
     background: #111;
 }
+
 .team .carousel .card {
     background-color: #222;
     border-radius: 6px;
@@ -425,9 +486,11 @@ section .title::after {
     overflow: hidden;
     text-align: center;
 }
+
 .team .carousel .card:hover {
     background-color: crimson;
 }
+
 .team .carousel .card .box {
     display: flex;
     flex-direction: column;
@@ -435,9 +498,11 @@ section .title::after {
     align-items: center;
     transition: all 0.3s ease;
 }
+
 .team .carousel .card:hover .box {
     transform: scale(1.05);
 }
+
 .team .carousel .card img {
     height: 150px;
     width: 150px;
@@ -446,34 +511,40 @@ section .title::after {
     border-radius: 50%;
     transition: all 0.3s ease;
 }
+
 .team .carousel .card:hover img {
     border-color: #fff;
 }
+
 .team .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 .owl-dots {
     text-align: center;
     margin-top: 20px;
 }
+
 .owl-dot {
     height: 13px;
     width: 13px;
     margin: 0 5px;
-    outline: none!important;
-    border: 2px solid crimson!important;
+    outline: none !important;
+    border: 2px solid crimson !important;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
+
 .owl-dot.active {
     width: 35px;
     border-radius: 14px;
 }
+
 .owl-dot.active,
 .owl-dot:hover {
-    background-color: crimson!important;
+    background-color: crimson !important;
 }
 
 
@@ -488,59 +559,74 @@ section .title::after {
 .contact .title::after {
     content: "Get In Touch";
 }
+
 .contact .contact-content .column {
     width: calc(50% - 30px)
 }
+
 .contact .contact-content .text {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .contact .contact-content .left p {
     text-align: justify;
 }
+
 .contact .contact-content .left .icons {
     margin: 10px 0;
 }
+
 .contact .contact-content .left .row {
     display: flex;
     align-items: center;
     height: 65px;
 }
+
 .contact .contact-content .left .row i {
     color: crimson;
     font-size: 25px;
 }
+
 .contact .contact-content .row .info {
     margin-left: 30px;
 }
+
 .spec-margin {
     margin-left: 25px;
 }
+
 .contact .contact-content .row .info .head {
     font-weight: 500;
 }
+
 .contact .contact-content .row .info .sub-title {
     color: #111;
 }
+
 .contact .right form .fields {
     display: flex;
 }
+
 .contact .right form .field,
 .contact .right form .fields .field {
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
 }
+
 .contact .right form .name {
     margin-right: 10px;
 }
+
 .contact .right form .textarea {
     height: 80px;
     width: 100%;
 }
+
 .contact .right form .field input,
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea {
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
@@ -551,33 +637,38 @@ section .title::after {
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
 }
-.contact .right form .textarea textarea{
+
+.contact .right form .textarea textarea {
     padding-top: 10px;
     resize: none;
 }
+
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
     border-color: crimson;
 }
+
 .contact .right form .button-area {
     height: 47px;
     width: 170px;
 }
+
 .contact .right form .button-area button {
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: crimson;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
 }
+
 /* Contact Section End */
 
 
@@ -592,10 +683,12 @@ footer {
     color: #fff;
     text-align: center;
 }
+
 footer span a {
     color: crimson;
     text-decoration: none;
 }
+
 footer span a:hover {
     text-decoration: underline;
 }
@@ -627,6 +720,7 @@ footer span a:hover {
     pointer-events: none;
     transition: all 0.3s ease;
 }
+
 .scroll-up-btn.show {
     opacity: 1;
     pointer-events: auto;
@@ -645,33 +739,40 @@ footer span a:hover {
         margin-bottom: 20px;
     }
 }
+
 @media (max-width: 1104px) {
     .about .about-content .left img {
         height: 350px;
         width: 350px;
     }
+
     .skills-content .right .bars {
         margin-bottom: 25px;
     }
 }
+
 @media (max-width: 1017px) {
     .skills-content .right .bars {
         margin-bottom: 30px;
     }
 }
+
 @media (max-width: 991px) {
     .max-width {
         padding: 0 50px;
     }
 }
+
 @media (max-width: 947px) {
     .menu-btn {
         display: block;
         z-index: 999;
     }
+
     .menu-btn i.active:before {
         content: "\f00d";
     }
+
     .navbar .menu {
         background: #111;
         padding-top: 80px;
@@ -683,87 +784,110 @@ footer span a:hover {
         top: 0;
         transition: all 0.3s ease;
     }
+
     .navbar .menu.active {
         left: 0;
     }
+
     .navbar .menu li {
         display: block;
     }
+
     .navbar .menu li a {
         display: inline-block;
         margin: 25px 0;
         font-size: 20px;
     }
+
     .home .home-content .text-2 {
         font-size: 70px;
     }
+
     .home .home-content .text-3 {
         font-size: 35px;
     }
+
     .home .home-content a {
         font-size: 23px;
         padding: 10px 30px;
     }
+
     .max-width {
         max-width: 930px;
     }
+
     .about .about-content .column {
         width: 100%;
     }
+
     .about .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
+
     .about .about-content .right {
         flex: 100%;
     }
+
     .service .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+
     .service .serv-content .card-center {
         display: flex;
         margin: auto;
     }
+
     .skills .skills-content .column,
     .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
     }
+
     .skills-content .right .bars {
         margin-bottom: 15px;
     }
 }
+
 @media (max-width: 690px) {
-    .max-width{
+    .max-width {
         padding: 0 23px;
     }
+
     .home .home-content .text-2 {
         font-size: 60px;
     }
+
     .home .home-content .text-3 {
         font-size: 32px;
     }
+
     .home .home-content a {
         font-size: 20px;
     }
+
     .service .serv-content .card,
     .skills .skills-content .column {
         width: 100%;
     }
 }
+
 @media (max-width: 500px) {
     .home .home-content .text-2 {
         font-size: 50px;
     }
+
     .home .home-content .text-3 {
         font-size: 27px;
     }
+
     .home .home-content a {
         font-size: 20px;
     }
-    .contact .right form .fields{
+
+    .contact .right form .fields {
         flex-direction: column;
     }
 }
